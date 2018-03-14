@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'nexar',
+      database: 'api_db',
       user:     'doron',
       password: 'pass123'
     },
@@ -21,7 +21,7 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'nexar',
+      database: 'api_db',
       user:     'doron',
       password: 'pass123'
     },
@@ -37,7 +37,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'nexar',
+      database: 'api_db',
       user:     'doron',
       password: 'pass123'
     },

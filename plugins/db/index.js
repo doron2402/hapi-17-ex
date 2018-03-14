@@ -11,7 +11,7 @@ async function register (server, options) {
       const pool = new Pool({
         user: 'doron',
         host: 'localhost',
-        database: 'nexar',
+        database: 'api_db',
         password: 'pass123',
         port: 5432
       });
