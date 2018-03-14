@@ -1,0 +1,29 @@
+{
+  "name": "Hapi-api",
+  "version": "1.0.0",
+  "description": "Hapi API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:docker": "docker run --name api-db -p 5432:5432 -e POSTGRES_PASSWORD=pass123 -e POSTGRES_USER=doron -e POSTGRES_DB=api_db -d postgres:9.6",
+    "migration:up": "./node_modules/.bin/knex  migrate:latest",
+    "seed": "./node_modules/.bin/knex seed:run"
+  },
+  "author": "Doron Segal",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "hapi": "^17.2.2",
+    "hapi-pino": "^4.0.3",
+    "hoek": "^5.0.3",
+    "inert": "^5.1.0",
+    "joi": "^13.1.2",
+    "knex": "^0.14.4",
+    "pg": "^7.4.1",
+    "wreck": "^14.0.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}
